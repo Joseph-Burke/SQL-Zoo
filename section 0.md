@@ -2,9 +2,7 @@
 
 ## 1. Introducing the world table of countries
 
-#### The example uses a WHERE clause to show the population of 'France'. Note that strings
-
-#### (pieces of text that are data) should be in 'single quotes';
+#### The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
 
 #### Modify it to show the population of Germany
 
@@ -20,8 +18,8 @@ SELECT population FROM world WHERE name = 'Germany'
 #### and the population for 'Sweden', 'Norway' and 'Denmark'.
 
 ```
-1 SELECT name, population FROM world
-2 WHERE name IN ('Sweden', 'Norway', 'Denmark');
+SELECT name, population FROM world
+WHERE name IN ('Sweden', 'Norway', 'Denmark');
 ```
 ## 3. Just the right size
 

@@ -1,8 +1,8 @@
-## Part 1: SELECT names
+## Part 1: SELECT from WORLD
 
 ### 1.
 
-#### Find the country that start with Y
+#### Find the country that starts with Y
 
 ```
 SELECT name FROM world WHERE name LIKE 'Y%';
@@ -56,7 +56,7 @@ SELECT name FROM world WHERE name LIKE '%oo%';
 #### Find the countries that have three or more a in the name
 
 ```
-SELECT name FROM world WHERE name LIKE 'T%';
+SELECT name FROM world WHERE name LIKE '%a%a%a%';
 ```
 ### 8.
 
@@ -114,9 +114,9 @@ SELECT name FROM world WHERE capital = CONCAT(name, ' city');
 #### Find the capital and the name where the capital includes the name of the country.
 
 ```
-1 SELECT capital, name
-2 FROM world
-3 WHERE capital LIKE CONCAT('%', name, '%');
+SELECT capital, name
+FROM world
+WHERE capital LIKE CONCAT('%', name, '%');
 ```
 ### 14.
 
@@ -137,7 +137,7 @@ SELECT capital, name FROM world WHERE capital LIKE CONCAT(name, '_%');
 
 
 ```
-1 SELECT name, REPLACE(capital, name, '')
-2 FROM world
-3 WHERE capital LIKE CONCAT(name, '_%');
+SELECT name, REPLACE(capital, name, '')
+FROM world
+WHERE capital LIKE CONCAT(name, '_%');
 ```
